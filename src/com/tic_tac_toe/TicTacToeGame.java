@@ -1,12 +1,9 @@
 package com.tic_tac_toe;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToeGame {
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 	private char playerChoice;
 	private char computerChoice;
 	Scanner scan = new Scanner(System.in);
@@ -19,6 +16,7 @@ public class TicTacToeGame {
 		}
 		return board;
 	}
+
 	// Show method is Created to Show the current board
 	private void showBoard() {
 		System.out.println(board[1] + "|" + board[2] + "|" + board[3]);
@@ -43,12 +41,9 @@ public class TicTacToeGame {
 			System.out.println("Invalid symbol...."); // invalid Symbol
 		return playerChoice;
 	}
+
 	// Ability for user to make a move to a desired location in the board
-<<<<<<< HEAD
 	private void makeMove() {
-=======
-	private void playerMove() {
->>>>>>> master
 		System.out.println("Where do you Want to play (1-8):");
 		int positionSelector = scan.nextInt();
 		switch (positionSelector) {
@@ -84,8 +79,9 @@ public class TicTacToeGame {
 		}
 		showBoard();
 	}
-<<<<<<< HEAD
-	// free space before making the desired move a move to a desired location in the board
+
+	// free space before making the desired move a move to a desired location in the
+	// board
 	private void isFreeSpaceAvailable() {
 		System.out.println("Enter desired location ");
 		int location = scan.nextInt();
@@ -156,21 +152,28 @@ public class TicTacToeGame {
 			System.out.println("invalid position");
 		}
 	}
-=======
->>>>>>> master
+
+	private void checkToss() {
+		Random rand = new Random();
+		int toss = rand.nextInt(2);
+		if (toss == 0) {
+			System.out.println("Player is playing!!!");
+		} else {
+			System.out.println("Computer is playing!!");
+		}
+	}
 
 	public static void main(String[] args) {
 		System.out.println("welcome to TicTacToe!!"); // Welcome message
 		TicTacToeGame tictactoeboard = new TicTacToeGame(); // object creation
 		tictactoeboard.creatBoard(); // method call
+		tictactoeboard.checkToss();
 		tictactoeboard.chooseLetter(); // method call
 		tictactoeboard.showBoard(); // method call
-<<<<<<< HEAD
 		tictactoeboard.makeMove(); // method call
 		tictactoeboard.isFreeSpaceAvailable(); // method call
-=======
-		tictactoeboard.playerMove(); // method call
->>>>>>> master
+		tictactoeboard.makeMove(); // method call
+
 	}
 
 }
