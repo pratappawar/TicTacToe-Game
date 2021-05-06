@@ -3,6 +3,10 @@ package com.tic_tac_toe;
 import java.util.Scanner;
 
 public class TicTacToeGame {
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 	private char playerChoice;
 	private char computerChoice;
 	Scanner scan = new Scanner(System.in);
@@ -40,7 +44,11 @@ public class TicTacToeGame {
 		return playerChoice;
 	}
 	// Ability for user to make a move to a desired location in the board
+<<<<<<< HEAD
 	private void makeMove() {
+=======
+	private void playerMove() {
+>>>>>>> master
 		System.out.println("Where do you Want to play (1-8):");
 		int positionSelector = scan.nextInt();
 		switch (positionSelector) {
@@ -76,6 +84,7 @@ public class TicTacToeGame {
 		}
 		showBoard();
 	}
+<<<<<<< HEAD
 	// free space before making the desired move a move to a desired location in the board
 	private void isFreeSpaceAvailable() {
 		System.out.println("Enter desired location ");
@@ -147,6 +156,8 @@ public class TicTacToeGame {
 			System.out.println("invalid position");
 		}
 	}
+=======
+>>>>>>> master
 
 	public static void main(String[] args) {
 		System.out.println("welcome to TicTacToe!!"); // Welcome message
@@ -154,8 +165,12 @@ public class TicTacToeGame {
 		tictactoeboard.creatBoard(); // method call
 		tictactoeboard.chooseLetter(); // method call
 		tictactoeboard.showBoard(); // method call
+<<<<<<< HEAD
 		tictactoeboard.makeMove(); // method call
 		tictactoeboard.isFreeSpaceAvailable(); // method call
+=======
+		tictactoeboard.playerMove(); // method call
+>>>>>>> master
 	}
 
 }
