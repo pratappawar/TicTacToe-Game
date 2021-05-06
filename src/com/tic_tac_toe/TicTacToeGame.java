@@ -78,6 +78,78 @@ public class TicTacToeGame {
 		}
 		showBoard();
 	}
+      //free space before making the desired move a move to a desired location in the board
+	public void checkDesiredLocationIsFree(){
+		System.out.println("Enter desired location ");
+		int location = scan.nextInt();
+		switch (location) {
+		case 1:
+			if (board[1] == ' ') {
+				board[1] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 2:
+			if (board[2] == ' ') {
+				board[2] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 3:
+			if (board[3] == ' ') {
+				board[3] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 4:
+			if (board[4] == ' ') {
+				board[4] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 5:
+			if (board[5] == ' ') {
+				board[5] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 6:
+			if (board[6] == ' ') {
+				board[6] = 'x';
+			} else {
+				System.out.println("Enetr at valid place");
+			}
+			break;
+		case 7:
+			if (board[7] == ' ') {
+				board[7] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 8:
+			if (board[8] == ' ') {
+				board[8] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+			break;
+		case 9:
+			if (board[9] == ' ') {
+				board[9] = 'x';
+			} else {
+				System.out.println("space is not free");
+			}
+		default:
+			System.out.println("invalid position");
+		}
+
+	}
 
 	public static void main(String[] args) {
 		System.out.println("welcome to TicTacToe!!"); // Welcome message
@@ -86,6 +158,7 @@ public class TicTacToeGame {
 		tictactoeboard.chooseLetter(); // method call
 		tictactoeboard.showBoard(); // method call
 		tictactoeboard.playerMove(); // method call
+		tictactoeboard.checkDesiredLocationIsFree();
 	}
 
 }
